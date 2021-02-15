@@ -1,5 +1,6 @@
 <?php
 
+// On peut rendre cette classe abtraite
 class Animal {
 
     public $age;
