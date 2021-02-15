@@ -2,10 +2,10 @@
 
 class Utilisateur extends ResultatDeRecherche {
 
-    public string $nom;
-    public string $prenom;
-    public string $pseudo;
-    public string $email;
+    public $nom;
+    public $prenom;
+    public $pseudo;
+    public $email;
 
 }
 
