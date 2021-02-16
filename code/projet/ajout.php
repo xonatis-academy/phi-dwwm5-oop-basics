@@ -1,4 +1,8 @@
 <?php
+/**
+ * DU FRONT VERS LA DB : Point 2
+ */
+
 // 0. On verifie si le nom et le prix est dans le payload
 if (isset($_POST['nom']) && isset($_POST['prix']))
 {
