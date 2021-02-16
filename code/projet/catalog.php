@@ -1,5 +1,4 @@
 <?php
-
 // 1. Se connecter a la base de données
 $connection = new PDO('mysql:host=localhost;port=3306;dbname=phi_dwwm5', 'root', '');
 $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -15,6 +14,26 @@ while ($ligne = $resultat->fetch())
     // Ajouter la ligne dans le tableau $velos
     array_push($velos, $ligne);
 }
-
-var_dump($velos);
 ?>
+
+<table>
+    <tr>
+        <th>Nom</th>
+        <th>Prix</th>
+    </tr>
+
+    <?php
+    foreach ($velos as $velo)
+    {
+    ?>
+
+    <tr>
+        <td><?php echo $velo['nom']; ?></td>
+        <td><?php echo $velo['prix']; ?></td>
+    </tr>
+
+    <?php
+    }
+    ?>
+
+</table>
